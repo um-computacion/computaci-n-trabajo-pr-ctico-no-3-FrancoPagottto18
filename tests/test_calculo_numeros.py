@@ -17,10 +17,10 @@ class TestCalculoNumeros(unittest.TestCase):
             Ingrese_Numero()
 
 
-   # @patch('builtins.input', return_value='AAA')
-    #def test_ingreso_letras(self, patch_input):
-        #with self.assertRaises(ValueError):
-            #Ingrese_Numero()
+    @patch('builtins.input', return_value='AAA')
+    def test_ingreso_letras(self, patch_input):
+        with self.assertRaises(ValueError):
+            Ingrese_Numero()
 
 if __name__ == '__main__':
     unittest.main()
