@@ -10,11 +10,11 @@ def Ingrese_Numero():
         return numero
     except ValueError:
        
+
         print("Eso no es un número válido.") 
         raise ValueError("Eso no es un número válido.")
     except NumeroDebeSerPositivo as e:
         print(e)  
-        raise e
 
 if __name__ == "__main__":
     try:
